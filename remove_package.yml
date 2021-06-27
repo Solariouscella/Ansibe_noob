@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+  
+  
+
+  - name: removing selected package
+    dnf:
+      name: mod_ssl 
+      state: absent

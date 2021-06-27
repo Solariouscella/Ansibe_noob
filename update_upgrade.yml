@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+  become: yes
+  tasks:
+    
+  - name: update
+    dnf: 
+      update_cache=yes 
+  - name:  upgrade
+    dnf:  
+      state: latest
+     
